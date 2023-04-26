@@ -1,0 +1,13 @@
+services:
+  drone-vc-p:
+    build: .
+    environment:
+      API_HASH: $API_ID  
+      API_ID: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN 
+      CHNAME: $BOT_UN
+      OWNRID: $AUTH_USERS
+      LOG_CHANNEL: $LOG_CHANNEL
+    resources:
+      cpu: 1000m
+      memory: 3Gi
